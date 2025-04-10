@@ -2,36 +2,19 @@ import java.util.Scanner;
 
 public class StringLab {
     public static void main(String[] args) {
-        // Task 1: Working with String Methods
         System.out.println("=== Task 1: String Methods ===");
         String str = " Welcome to the Java String Lab! ";
-
         System.out.println("Original string: \"" + str + "\"");
-
-        // length()
         System.out.println("Length: " + str.length());
-
-        // charAt()
         System.out.println("Character at index 7: " + str.charAt(7));
-
-        // substring()
         System.out.println("Substring \"Java\": " + str.substring(str.indexOf("Java"), str.indexOf("Java") + 4));
-
-        // toUpperCase() and toLowerCase()
         System.out.println("Uppercase: " + str.toUpperCase());
         System.out.println("Lowercase: " + str.toLowerCase());
-
-        // indexOf()
         System.out.println("Index of \"Java\": " + str.indexOf("Java"));
-
-        // contains()
         System.out.println("Contains \"Lab\": " + str.contains("Lab"));
-
-        // replace()
         System.out.println("Replace \"Java\" with \"Java Programming\": " + str.replace("Java", "Java Programming"));
-
-        // split()
         System.out.println("Split by spaces:");
+       
         String[] words = str.split(" ");
         for (String word : words) {
             if (!word.isEmpty()) {
@@ -40,16 +23,11 @@ public class StringLab {
         }
 
         System.out.println("Trimmed: \"" + str.trim() + "\"");
-
-        // equals() and equalsIgnoreCase()
         String comparison = "java string lab!";
         System.out.println("Equals (case-sensitive): " + str.trim().equals(comparison));
         System.out.println("Equals (ignore case): " + str.trim().equalsIgnoreCase(comparison));
-
-        // Task 2: Loop Challenges
         System.out.println("\n=== Task 2: Loop Challenges ===");
-
-        // 🌀 For Loop: Count Vowels
+        
         int vowelCount = 0;
         String vowels = "aeiouAEIOU";
         for (int i = 0; i < str.length(); i++) {
@@ -57,8 +35,8 @@ public class StringLab {
                 vowelCount++;
             }
         }
+        
         System.out.println("Number of vowels: " + vowelCount);
-
         String word = "racecar";
         int left = 0;
         int right = word.length() - 1;
